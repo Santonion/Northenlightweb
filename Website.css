@@ -1,0 +1,123 @@
+/*
+.header {
+    background-color: green;
+    color: greenyellow;
+    padding: 10px;
+    text-align: center;
+    top: auto;
+}   
+
+.vertical-menu {
+    background-color: green;
+    color: greenyellow;
+    padding: 10px;
+    text-align: left;
+    top: auto;
+}   
+
+.my-Slides
+
+.body{
+    height: 100%;
+    margin: 0;
+}
+
+.topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+}
+  
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+  
+.carusel{
+    width: 80%;
+    min-width: 100%;
+    display: block;
+}
+
+
+
+.bgimg {
+  background-image: url("HtmlBilder/Solnedgång.webp");
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
+*/
+
+/* Body, all the main background stuff */
+body {
+    background-color: #f0f0f0;
+    color: #333;
+}
+/* The background for all the websites except for the mainsite */
+.navbar {
+    background-color: #000;
+}
+/* the navbar for the mainsite */
+.navbar-start {
+    background-color: transparent; /* Remove background color */
+    position: absolute; /* Position the navbar */
+    width: 100%;
+    z-index: 1000;
+}
+/* makes home button white */
+.navbar-brand {
+    color: #fff;
+}
+#spacex-info {
+    background-color: #fff; /* White container */
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+#spacex-info h2 {
+    color: #333; /* Dark header text */
+    border-bottom: 2px solid #ccc; /* Gray bottom border */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+/* This changes colour of the icon in mobile mdoe for the Countdown */
+.navbar-toggler-icon-custom {
+    background-color: #0d253f;
+}
+/* Dark blue background for Nordic Lights info */
+#nordic-lights-info {
+    background-color: #0d253f;
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+#nordic-lights-info h2 {
+    color: #fff; /* White header text */
+    border-bottom: 2px solid #ccc; /* Gray bottom border */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+/* this is to make the Row Feature not touch the wall */
+.row.featurette {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/* Additional space-related styles */
+/* Add your own space-related styles here */
