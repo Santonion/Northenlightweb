@@ -64,11 +64,12 @@
 
 /* Body, all the main background stuff */
 
+/* The background for all the websites except for the mainsite */
 body {
     background-color: #f0f0f0;
     color: #333;
 }
-/* The background for all the websites except for the mainsite */
+/* Navbar background for all except mainsite */
 .navbar {
     background-color: #000;
 }
