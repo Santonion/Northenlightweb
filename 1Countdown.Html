@@ -6,6 +6,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="Website.css" rel="stylesheet">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    
+    <!-- JavaScript for Countdown Timer -->
+    <script src="1Countdown.Js"></script>
 </head>
 <body>
     <!-- This is the navbar code for all except main website -->
@@ -33,50 +39,18 @@
         </div>
     </nav>
 
+    <!-- The bubble with timer -->
     <div class="container mt-4">
         <div id="nordic-lights-info">
             <h2>Nordic Lights</h2>
             <p>Experience the mesmerizing beauty of the Northern Lights!</p>
-            <!-- Timer Section -->
+            <!-- The actual timer -->
             <div id="countdown-timer">
                 <h3>Countdown to the Next Display</h3>
                 <p id="timer">00:00:00</p>
             </div>
-            <!-- End of Timer Section -->
         </div>
     </div>
-
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-    <!-- JavaScript for Countdown Timer -->
-    <script>
-        // Replace this script with your actual countdown timer logic
-        // This is just a placeholder to show the format
-        function updateTimer() {
-            // Get current time or set a future date/time
-            let currentTime = new Date().getTime();
-            let eventTime = new Date("2024-01-01").getTime();
-
-            // Find the remaining time
-            let remainingTime = eventTime - currentTime;
-
-            // Calculate days, hours, minutes, and seconds
-            let days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
-            let hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            let minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
-            let seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
-
-            // Display the timer in the "timer" element
-            document.getElementById("timer").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-        }
-
-        // Update the timer every second
-        setInterval(updateTimer, 1000);
-
-        // Initial call to update timer when the page loads
-        updateTimer();
-    </script>
 
 
 <!-- Divider -->
